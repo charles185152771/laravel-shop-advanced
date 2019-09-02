@@ -29,3 +29,7 @@ https://blog.csdn.net/qq_33404395/article/details/80788233
 ngrok authtoken 1QH6ilKbBSCJ6b9B4RUGaDSZTN8_2jRieToAgafS28gzodsMz
 启动 Ngrok 客户端
 ngrok http -host-header=shop.test -region ap 80
+
+http://192.168.10.10:4040/inspect
+
+https://dashboard.ngrok.com/auth
