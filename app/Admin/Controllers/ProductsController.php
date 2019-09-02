@@ -9,25 +9,52 @@ use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
-use App\Http\Controllers\Controller;
+
 use Encore\Admin\Controllers\ModelForm;
 
-class ProductsController extends Controller
+class ProductsController extends CommonProductsController
 {
-    use ModelForm;
+    //use ModelForm;
+
+
+    // 移除 ModelForm
+    public function getProductType()
+    {
+        return Product::TYPE_NORMAL;
+    }
+
+    protected function customGrid(Grid $grid)
+    {
+        $grid->model()->with(['category']);
+        $grid->id('ID')->sortable();
+        $grid->title('商品名称');
+        $grid->column('category.name', '类目');
+        $grid->on_sale('已上架')->display(function ($value) {
+            return $value ? '是' : '否';
+        });
+        $grid->price('价格');
+        $grid->rating('评分');
+        $grid->sold_count('销量');
+        $grid->review_count('评论数');
+    }
+
+    protected function customForm(Form $form)
+    {
+        // 普通商品没有额外的字段，因此这里不需要写任何代码
+    }
 
     /**
      * Index interface.
      *
      * @return Content
      */
-    public function index()
-    {
-        return Admin::content(function (Content $content) {
-            $content->header('商品列表');
-            $content->body($this->grid());
-        });
-    }
+//    public function index()
+//    {
+//        return Admin::content(function (Content $content) {
+//            $content->header('商品列表');
+//            $content->body($this->grid());
+//        });
+//    }
 
     /**
      * Edit interface.
@@ -35,33 +62,33 @@ class ProductsController extends Controller
      * @param $id
      * @return Content
      */
-    public function edit($id)
-    {
-        return Admin::content(function (Content $content) use ($id) {
-            $content->header('编辑商品');
-            $content->body($this->form()->edit($id));
-        });
-    }
+//    public function edit($id)
+//    {
+//        return Admin::content(function (Content $content) use ($id) {
+//            $content->header('编辑商品');
+//            $content->body($this->form()->edit($id));
+//        });
+//    }
 
     /**
      * Create interface.
      *
      * @return Content
      */
-    public function create()
-    {
-        return Admin::content(function (Content $content) {
-            $content->header('创建商品');
-            $content->body($this->form());
-        });
-    }
+//    public function create()
+//    {
+//        return Admin::content(function (Content $content) {
+//            $content->header('创建商品');
+//            $content->body($this->form());
+//        });
+//    }
 
     /**
      * Make a grid builder.
      *
      * @return Grid
      */
-    protected function grid()
+    /*protected function grid()
     {
         return Admin::grid(Product::class, function (Grid $grid) {
             // 使用 with 来预加载商品类目数据，减少 SQL 查询
@@ -91,14 +118,14 @@ class ProductsController extends Controller
                 });
             });
         });
-    }
+    }*/
 
     /**
      * Make a form builder.
      *
      * @return Form
      */
-    protected function form()
+    /*protected function form()
     {
         // 创建一个表单
         return Admin::form(Product::class, function (Form $form) {
@@ -132,5 +159,5 @@ class ProductsController extends Controller
                 $form->model()->price = collect($form->input('skus'))->where(Form::REMOVE_FLAG_NAME, 0)->min('price') ?: 0;
             });
         });
-    }
+    }*/
 }
