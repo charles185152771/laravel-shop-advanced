@@ -33,3 +33,8 @@ ngrok http -host-header=shop.test -region ap 80
 http://192.168.10.10:4040/inspect
 
 https://dashboard.ngrok.com/auth
+
+
+
+2019-9-2下午做到（4.9）
+file:///C:/Users/201608290003/Desktop/laravel-china/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/2228-test-crowd-end-logic.html
