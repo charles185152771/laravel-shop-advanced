@@ -43,3 +43,8 @@ file:///C:/Users/201608290003/Desktop/laravel-china/L06%20Laravel%20%E6%95%99%E7
 
 2019-9-3上午做到（4.9）
 file:///C:/Users/201608290003/Desktop/laravel-china/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/2111-instalment-list-page.html
+
+2019-9-4下午做到
+file:///C:/Users/201608290003/Desktop/laravel-china/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/2108-installment-repayment-alipay.html
+6. 测试
+（还没有测试过）
