@@ -93,3 +93,6 @@ warning: Falling back to java on path. This behavior is deprecated. Specify JAVA
 
  2019-9-5做到
  file:///C:/Users/201608290003/Desktop/laravel-china/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/1953-using-elasticsearch-in-laravel.html
+
+ 2019-9-6做到
+ file:///C:/Users/201608290003/Desktop/laravel-china/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/L06%20Laravel%20%E6%95%99%E7%A8%8B%20-%20%E7%94%B5%E5%95%86%E8%BF%9B%E9%98%B6-ecommerce-advance/1966-create-commodity-index.html
