@@ -370,7 +370,7 @@ class ProductsController extends Controller
             ->orderByRaw(sprintf("FIND_IN_SET(id, '%s')", join(',', $similarProductIds)))
             ->get();
         */
-        
+
         $similarProducts   = Product::query()->byIds($similarProductIds)->get();
 
 
