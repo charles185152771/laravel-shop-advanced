@@ -48,7 +48,7 @@ class SeckillOrderRequest extends Request
                     if (!$user->email_verified) {
                         throw new InvalidRequestException('请先验证邮箱');
                     }
-                    
+
                     /*
                     if (!$sku = ProductSku::find($value)) {
                         return $fail('该商品不存在');

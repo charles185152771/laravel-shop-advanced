@@ -65,4 +65,7 @@ Route::post('installments/wechat/notify', 'InstallmentsController@wechatNotify')
 Route::post('installments/wechat/refund_notify', 'InstallmentsController@wechatRefundNotify')->name('installments.wechat.refund_notify');
 
 
-Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store');
+//Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store');
+
+Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store')->middleware('random_drop:100');
+
