@@ -47,6 +47,8 @@ Route::group(['middleware' => 'auth'], function() {
 
         Route::get('installments/{installment}/wechat', 'InstallmentsController@payByWechat')->name('installments.wechat');
 
+        Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store');
+
     });
 });
 
