@@ -63,3 +63,6 @@ Route::post('installments/alipay/notify', 'InstallmentsController@alipayNotify')
 Route::post('installments/wechat/notify', 'InstallmentsController@wechatNotify')->name('installments.wechat.notify');
 
 Route::post('installments/wechat/refund_notify', 'InstallmentsController@wechatRefundNotify')->name('installments.wechat.refund_notify');
+
+
+Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store');
